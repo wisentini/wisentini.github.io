@@ -1,0 +1,19 @@
+body {
+  background-color: #660000;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+
+#emoji {
+  margin: 0 auto;
+  width: 128px;
+}
+
+#emoji:hover {
+  cursor: pointer;
+}

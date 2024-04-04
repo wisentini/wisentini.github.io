@@ -1,9 +1,3 @@
-const generateRandomInteger = (min, max) => {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-};
-
 const digestMessage = async (message) => {
   const messageBuffer = new TextEncoder().encode(message);                    
   const hashBuffer = await crypto.subtle.digest('SHA-512', messageBuffer);

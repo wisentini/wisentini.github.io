@@ -23,7 +23,7 @@ const generateBackgroundColor = async () => {
   return `#${hash.substring(0, 6).toUpperCase()}`;
 };
 
-$(document).ready(async () => {
+$(async () => {
   const backgroundColor = await generateBackgroundColor();
   
   $('body').css('background-color', backgroundColor);

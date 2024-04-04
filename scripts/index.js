@@ -1,6 +1,12 @@
 luxon.Settings.defaultLocale = 'pt-BR';
 luxon.Settings.defaultZone = 'America/Sao_Paulo';
 
+const emojiTransitions = {
+  'deaf-man-emoji': 'man-bowing-emoji',
+  'man-bowing-emoji': 'man-shrugging-emoji',
+  'man-shrugging-emoji': 'man-bowing-emoji'
+};
+
 const digestMessage = async (message) => {
   const messageBuffer = new TextEncoder().encode(message);
 
@@ -27,12 +33,6 @@ $(async () => {
   const backgroundColor = await generateBackgroundColor();
   
   $('body').css('background-color', backgroundColor);
-  
-  const emojiTransitions = {
-    'deaf-man-emoji': 'man-bowing-emoji',
-    'man-bowing-emoji': 'man-shrugging-emoji',
-    'man-shrugging-emoji': 'man-bowing-emoji'
-  };
   
   const sound = new Howl({
     src: ['./assets/track.mp3']

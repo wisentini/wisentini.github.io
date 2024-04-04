@@ -11,14 +11,10 @@ body {
 
 #emoji {
   margin: 0 auto;
+  user-select: none;
   width: 128px;
 }
 
 #emoji:hover {
   cursor: pointer;
-}
-
-#emoji:focus,
-#emoji:active {
-  outline: none;
 }

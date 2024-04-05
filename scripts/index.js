@@ -35,7 +35,8 @@ $(async () => {
   $('body').css('background-color', backgroundColor);
   
   const sound = new Howl({
-    src: ['./assets/track.mp3']
+    src: ['./assets/track.mp3'],
+    html5: true
   });
 
   sound.on('fade', () => {

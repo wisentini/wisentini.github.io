@@ -12,7 +12,6 @@ body {
 #emoji {
   margin: 0 auto;
   -webkit-tap-highlight-color: transparent;
-  width: 128px;
 }
 
 #emoji:hover {

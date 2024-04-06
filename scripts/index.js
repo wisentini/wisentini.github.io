@@ -37,7 +37,10 @@ $(async () => {
   const sound = new Howl({
     src: ['./assets/track.mp3'],
     volume: 0.1,
-    html5: true
+    html5: true,
+    onend: () => {
+      sound.unload();
+    }
   });
 
   sound.on('fade', () => {

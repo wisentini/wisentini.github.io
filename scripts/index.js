@@ -20,7 +20,7 @@ const digestMessage = async (message) => {
 const generateBackgroundColor = async () => {
   const currentDayAndMonth = luxon.DateTime.now().toFormat('dd/MM');
 
-  if (!['05/03', '09/08', '08/09', '16/12'].includes(currentDayAndMonth)) {
+  if (!['05/03', '07/05', '09/08', '08/09', '16/12'].includes(currentDayAndMonth)) {
     return '#660000';
   }
 
